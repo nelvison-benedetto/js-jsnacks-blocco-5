@@ -10,5 +10,19 @@ const zucchine = [
   { type: 'Calabrese', weight: 6, length: 27 },
   { type: 'Calabrese', weight: 14, length: 4 },
 ];
+shortpumpkins = [];
+longpumpkins = [];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+//const longpumpkins = zucchine.filter((item,index)=>{if(item.length>15){return item} else{shortpumpkins.push(item);} });
+ //better only 1 cycle with  forech+pushes on 2 arrs
+
+ zucchine.forEach((item,index)=>{
+  if(item.length>15){longpumpkins.push(item);}
+  else {shortpumpkins.push(item);}
+ });
+
+
+console.log(zucchine);
+console.log(longpumpkins);
+console.log(shortpumpkins);

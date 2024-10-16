@@ -7,3 +7,6 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+const onlynames = posts.map((item,index)=>{return item.author;});
+console.log(`Risultato: ${onlynames.join(", ")}`);
